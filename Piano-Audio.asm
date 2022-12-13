@@ -1,8 +1,8 @@
 .data
-	# Endereço de verificação da ocorrencia de evento na ferramenta keyboard and display
+	# Endereço de armazenamento do caractere pressionado na ferramenta keyboard and display
 	teclado: .word 0xffff0004
 	
-	# Endereço de armazenamento do caractere pressionado na ferramenta keyboard and display
+	# Endereço de verificação da ocorrencia de evento na ferramenta keyboard and display
 	evento: .word 0xffff0000 
 	
 	# Vetor de ajuste do número da tabela ASCII para o valor do tom correspondente
@@ -16,7 +16,7 @@ main:
 	li $s0, 4
 
 	# Loop de verificação de entrada
-	jal le:
+	le:
 	lw $t0, evento
 	lw $t0, ($t0)
 	bnez $t0, toca
