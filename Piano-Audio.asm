@@ -38,7 +38,7 @@ main:
 	mult $t0, $s0
 	mflo $t0
 	# Extrai o valor do tom e coloca no registrador
-	lw $t0, tons($t0)
+	lw $a0, tons($t0)
 	
 	# Toca-se a nota	
 	li $v0, 31 	# Syscall correspondente
