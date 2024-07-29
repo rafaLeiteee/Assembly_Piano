@@ -1,4 +1,4 @@
-# Piano-em-MIPS
+# Piano em Assembly
 Trabalho final de AOC
 
 - Para executar o programa é necessário fazer o download do simulador MARS.
